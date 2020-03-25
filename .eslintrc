@@ -1,3 +1,4 @@
 {
-  "extends": ["airbnb"]
+  "root": true,
+  "extends": ["react-app", "plugin:prettier/recommended"]
 }
