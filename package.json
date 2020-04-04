@@ -18,8 +18,12 @@
     "eject": "react-scripts eject",
     "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix .",
-    "precommit": "lint-staged"
+    "lint:fix": "eslint --fix ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "*.+(js|jsx)": [
