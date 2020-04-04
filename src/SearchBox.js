@@ -8,7 +8,7 @@ const SearchBox = ({ searchWord, setSearchWord }) => {
         type="search"
         placeholder="search robots"
         value={searchWord}
-        onChange={(e) => setSearchWord(e.target.value)}
+        onChange={(e) => setSearchWord(e)}
       />
     </div>
   );
