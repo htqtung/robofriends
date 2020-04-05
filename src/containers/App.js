@@ -3,6 +3,7 @@ import React from 'react';
 import CardList from '../components/CardList';
 import Scroll from '../components/Scroll';
 import SearchBox from '../components/SearchBox';
+import ErrorBoundary from '../components/ErrorBoundary';
 import './App.css';
 
 export default class App extends React.Component {
@@ -39,7 +40,9 @@ export default class App extends React.Component {
           <p>Loading...</p>
         ) : (
           <Scroll>
-            <CardList robots={filteredRobots} />
+            <ErrorBoundary>
+              <CardList robots={filteredRobots} />
+            </ErrorBoundary>
           </Scroll>
         )}
       </div>
